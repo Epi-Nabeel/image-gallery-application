@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <style>
+    #content {
+      text-align: center;
+    }
+
+    input {
+      width: 25%;
+    }
+
+    #results div {
+      display: flex;
+      align-items: flex-start;
+      background-color: #d9f2d9;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    #results img {
+      margin-right: 20px;
+      width: 250px;
+    }
+
+    #results div div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    #results div h3 {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center;">Nabeel Ishfark 300387924</h1>
+
+  <div id="content">
+    <h1>The Image Gallery</h1>
+    <form>
+      <input type="text" size="30" placeholder="Search Something" id="input1">
+      <input type="number" size="30" placeholder="Enter number of images" id="input2" min="2">
+      <button type="button" id="searchBtn">Click to see results</button>
+    </form>
+    <div id="results"></div>
+  </div>
+
+  <script src="fetchapi.js"></script>
+  <script src="axios.js"></script>
+</body>
+</html>
